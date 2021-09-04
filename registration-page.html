@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>COVID-19 keep fit at home</title>
+        <link href="style/layout.css" rel="stylesheet">
+        <script src="jsdoc/reg.js"></script>
+    </head>
+
+    <body>
+        <div style="width: 1200px;">
+        <div class="wrapper">
+                <div class="topbar"><a href=index.html>Return to home page</a></div>
+            <div class="NAVIGATIONBAR">
+                <div class="pica"><img src="pic/logo.png">
+                <div class ="nvb1"><b>Living It Fully </br>Everyday</b></div></div>
+                <div class="nvb2" background colour="#F7DC6F">
+                <b><br><a href =Yoga.html>Yoga</a><br>
+                <br><a href =Meditation.html>Meditation</a><br>
+                <br><a href =Stretching.html>Stretching</a><br>
+                <br><a href =Healthy-habits.html>Healthy-habits</a><br></b>
+                
+                </div>
+            </div>
+               
+
+        <div class="HEADER">Register</div>
+
+        
+        <div class="content">
+
+            <form action="" method="post"
+            onsubmit="return validateForm();">
+            <fieldset>
+                <legend>Registration</legend>
+                <div class="grid-container">
+
+                    <div>
+                        <label for="firstname">*First name</label>
+                    </div>
+                    
+                    <div>
+                        <input type="text" id="firstname" name="firstname" />
+                        <div class="error">First name is required.</div>
+                    </div>
+
+                    <div>
+                        <label for="lastname">*Last name</label>
+                    </div>
+                    
+                    <div>
+                        <input type="text" id="lastname" name="lastname" />
+                        <div class="error">Lastname is required.</div>
+                    </div>
+
+                    <div>
+                        <label for="email">*Email</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="email" name="email" />
+                        <div class="error">Email is invalid.</div>
+                    </div>
+                    <div>
+                    <label for="comemail">*Comform Email</label>
+                    </div>
+
+                     <div>
+                        <input type="text" id="comemail" name="comemail" />
+                        <div class="error">Email can not be comform!!</div>
+                    </div>
+
+                    <div>
+                        <label for="phone">*Phone number</label>
+                    </div>
+                    <div>
+                        <input type="text" id="phone" name="phone" />
+                        <div class="error">Phone number is invalid. Must be in the format: +61 4xx xxx xxx</div>
+                    </div>
+
+                    <div>
+                        <label for="phone">*Number of additional family members</label>
+                    </div>
+                    <div>
+                        <input type="text" id="members" name="members" value="0" oninput="membersUpdate();" />
+                        <div class="error">Must be a whole number and greater than or equal to 0.</div>
+                    </div>
+
+                    <div id="memberNames"></div>
+
+                    <div>
+                        <input type="submit" value="Sign Up" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        </div>
+        <script>
+            populateForm();
+        </script>
+
+        <div class="footer"> LIFE@localcouncil.com</div>
+                            
+
+
+        </div>
+
+
+    </body>
+</html>

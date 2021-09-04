@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset='utf-8' />
+        <title>COVID-19 keep fit at home</title>
+        <link href="style/layout.css" rel="stylesheet">
+        <script src='jsdoc/media-player.js'></script>
+    </head>
+
+    <body>  
+        <div style="width: 1200px;">
+        <div class="wrapper">
+                <div class="topbar"><a href=registration-page.html>Register</a></div>
+            <div class="box NAVIGATIONBAR">
+                <div class="pica"><img src="pic/logo.png">
+                <div class ="nvb1"><b>Living It Fully </br>Everyday </b></div></div>
+                <div class="nvb2" background colour="#F7DC6F">
+                    <br><a href =Yoga.html><b>Yoga</b>
+
+                    </a><br>
+                <b><br><a href =Meditation.html>Meditation</a><br>
+                
+                <br><a href =Stretching.html>Stretching</a><br>
+                <br><a href =index.html>Return to home page</a><br></b>
+                
+                </div>
+            </div>
+               
+
+        <div class="HEADER">Some Healthy-habits</div>
+        <div class="content">
+
+            <div id='media-player'>
+                <video id='media-video' controls>
+                    <source src='pic/healthha.mp4' type='video/mp4'>
+                </video>
+                <div id='media-controls'>
+                    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                    <button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>
+                    <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+                    <button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+                    <button id='volume-inc-button' class='volume-plus' title='increase volume'
+                        onclick='changeVolume("+");'>Increase volume</button>
+                    <button id='volume-dec-button' class='volume-minus' title='decrease volume'
+                        onclick='changeVolume("-");'>Decrease volume</button>
+                    <button id='mute-button' class='mute' title='mute' onclick='toggleMute("true");'>Mute</button>
+                </div>
+            </div>  
+
+        </div>
+        <div class="footer">LIFE@localcouncil.com</div>
+                            
+
+
+        </div>
+    </div>
+
+    </body>
+</html>
